@@ -1,9 +1,11 @@
-import Footer from "./components/footer/footer.component";
+import Header from "../components/header/header.component";
+import Footer from "../components/footer/footer.component";
 import styles from "./page.module.scss";
 
 export default function Home() {
   return (
     <>
+      <Header />
       <main className={styles.main}>
         <section className={styles.home}>
           <div className="container">
@@ -12,7 +14,6 @@ export default function Home() {
                 <p className={styles.hero_first_title}>
                   So, You want to travel to
                 </p>
-
                 <br />
                 <h1 className={styles.hero_title}>SPACE</h1>
                 <p className={styles.hero_paragraph}>

@@ -16,7 +16,8 @@
 }
 
 body {
-  background-color: $body-bg;
+  background: url(../public/images/background-home-desktop.jpg) no-repeat;
+  background-size: cover;
   color: $white;
 }
 

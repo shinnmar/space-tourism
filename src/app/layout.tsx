@@ -1,22 +1,33 @@
-import type { Metadata } from "next";
+// layout.tsx
+import React from "react";
+import Header from "@/components/header/header.component";
+import Footer from "@/components/footer/footer.component";
 import { Inter } from "next/font/google";
+
 import "./globals.scss";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Space Tourism",
   description: "Frontend Friday Challenge",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
+interface LayoutProps {
   children: React.ReactNode;
-}>) {
+  pageClass?: string; 
+}
+
+const RootLayout: React.FC<LayoutProps> = ({ children, pageClass }) => {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} ${pageClass}`}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
-}
+};
+
+export default RootLayout;

@@ -1,11 +1,11 @@
 import React from "react";
+import styles from "../destination/destination.module.scss";
 
-const Destination: React.FC = () => {
+const Destination = () => {
   return (
-    <div>
-      <h1>Destination Page</h1>
-
-    </div>
+    <section className={styles.destination}>
+      <h2>Destination</h2>
+    </section>
   );
 };
 

@@ -3,7 +3,7 @@ import styles from "./header.module.scss";
 
 export default function Header() {
   return (
-    <header className={styles.header}>
+    <nav className={styles.header}>
       <div className={styles.logo}>
         <img
           className={styles.logo_icon}
@@ -11,7 +11,7 @@ export default function Header() {
           alt="Space logo"
         />
       </div>
-      <nav className={styles.navigation}>
+      <div className={styles.navigation}>
         <div className={styles.nav_content}>
           <a className={styles.nav_link} href="/">
             <span>00</span> Home
@@ -27,7 +27,7 @@ export default function Header() {
           </a>
         </div>
         <div className={styles.line}></div>
-      </nav>
-    </header>
+      </div>
+    </nav>
   );
 }

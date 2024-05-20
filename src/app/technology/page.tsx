@@ -1,11 +1,11 @@
 import React from "react";
+import styles from "./Technology.module.scss";
 
-const Technology: React.FC = () => {
+const Technology = () => {
   return (
-    <div>
-      <h1>Technology Page</h1>
-
-    </div>
+    <section className={styles.technology}>
+      <div>Test</div>
+    </section>
   );
 };
 

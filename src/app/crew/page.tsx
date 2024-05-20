@@ -1,12 +1,12 @@
 import React from "react";
+import styles from "./Crew.module.scss";
 
-const Crew: React.FC = () => {
+const Crew = () => {
   return (
-    <div>
-      <h1>Crew Page</h1>
-
-    </div>
+    <section className={styles.crewPage}>
+      <div>Test</div>
+    </section>
   );
 };
 
-export default Crew
+export default Crew;

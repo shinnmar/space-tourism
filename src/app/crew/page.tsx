@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Crew.module.scss";
+import styles from "../crew/crew.module.scss";
 
 const Crew = () => {
   return (

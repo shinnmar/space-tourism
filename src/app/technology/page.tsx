@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Technology.module.scss";
+import styles from "../technology/technology.module.scss";
 
 const Technology = () => {
   return (

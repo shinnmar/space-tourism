@@ -1,5 +1,5 @@
 // layout.tsx
-import React from "react";
+import { ReactNode } from "react";
 import Header from "@/components/header/header.component";
 import Footer from "@/components/footer/footer.component";
 import { Inter } from "next/font/google";
@@ -13,21 +13,18 @@ export const metadata = {
   description: "Frontend Friday Challenge",
 };
 
-interface LayoutProps {
-  children: React.ReactNode;
-  pageClass?: string; 
-}
-
-const RootLayout: React.FC<LayoutProps> = ({ children, pageClass }) => {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: ReactNode;
+}>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${pageClass}`}>
+      <body>
         <Header />
         {children}
         <Footer />
       </body>
     </html>
   );
-};
-
-export default RootLayout;
+}

@@ -1,7 +1,8 @@
 import styles from "./page.module.scss";
-import RootLayout from "../app/layout";
+import useBodyClass from "@/hooks/useBodyClass";
 
 const Home: React.FC = () => {
+  useBodyClass("homePage");
   return (
     <main className={styles.main}>
       <section className={styles.home}>

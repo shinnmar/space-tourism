@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../technology/technology.module.scss";
 import useBodyClass from "@/hooks/useBodyClass";
 
-const Technology = () => {
+const Technology: React.FC = () => {
   useBodyClass("technologyPage");
   return (
     <section className={styles.technology}>

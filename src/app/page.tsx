@@ -1,6 +1,11 @@
+"use client";
+
+import React from "react";
 import styles from "./page.module.scss";
+import useBodyClass from "@/hooks/useBodyClass";
 
 const Home: React.FC = () => {
+  useBodyClass("homePage");
   return (
     <main className={styles.main}>
       <section className={styles.home}>
@@ -30,6 +35,5 @@ const Home: React.FC = () => {
     </main>
   );
 };
-
 
 export default Home;

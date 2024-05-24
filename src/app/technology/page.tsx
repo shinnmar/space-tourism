@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import styles from "../technology/technology.module.scss";
 import useBodyClass from "@/hooks/useBodyClass";

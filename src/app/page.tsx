@@ -25,9 +25,11 @@ const Home: React.FC = () => {
               </p>
             </article>
             <article className={styles.right}>
-              <div className={styles.circle}>
-                <div className={styles.circle_text}>EXPLORE</div>
-              </div>
+              <a href="/destination">
+                <div className={styles.circle}>
+                  <div className={styles.circle_text}>EXPLORE</div>
+                </div>
+              </a>
             </article>
           </div>
         </div>

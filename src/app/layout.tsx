@@ -2,11 +2,14 @@
 import { ReactNode } from "react";
 import Header from "@/components/header/header.component";
 import Footer from "@/components/footer/footer.component";
-import { Inter } from "next/font/google";
-
+import { Bellefair, Barlow_Condensed } from "next/font/google";
 import "./globals.scss";
 
-const inter = Inter({ subsets: ["latin"] });
+const bellefair = Bellefair({ subsets: ["latin"], weight: ["400"] });
+const barlowCondensed = Barlow_Condensed({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 
 export const metadata = {
   title: "Space Tourism",
@@ -20,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className={`${bellefair.className} ${barlowCondensed.className}`}>
         <Header />
         {children}
         <Footer />

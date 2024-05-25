@@ -1,7 +1,9 @@
 .home {
-  padding: 14rem 0 12rem;
+  @media (max-width: 767.98px) {
+    max-height: 700px;
+  }
   .columns {
-    padding: 4rem 0;
+    padding: 15rem 0 8rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -10,16 +12,39 @@
     width: 100%;
     margin: 0 auto;
 
+    @media (max-width: 991.98px) {
+      width: 100%;
+    }
+
+    @media (max-width: 767.98px) {
+      flex-direction: column;
+      padding: 0;
+    }
+
     .left {
       width: 40%;
       justify-content: center;
       flex-direction: column;
       text-align: justify;
+      @media (max-width: 991.98px) {
+        width: 50%;
+      }
+
+      @media (max-width: 767.98px) {
+        width: 100%;
+      }
     }
 
     .right {
       width: 30%;
       justify-content: flex-end;
+      @media (max-width: 991.98px) {
+        width: 50%;
+      }
+
+      @media (max-width: 767.98px) {
+        width: 100%;
+      }
     }
 
     .left,
@@ -33,27 +58,21 @@
   }
 
   .hero_title {
-    font-size: 9.4rem;
+    font-size: 10rem;
     letter-spacing: 10px;
     margin: 0 0 3rem;
+    font-family: "Bellefair", serif;
+    // font-family: "Barlow Condensed", sans-serif;
 
     @media (max-width: 991.98px) {
       font-size: 7rem;
     }
   }
 
-  .hero_title,
-  .circle_text {
-    font-family: "Bellefair", serif;
-  }
-
-  .hero_text {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
   .hero_paragraph {
+    font-size: 1.4rem;
     text-align: justify;
-    width: 70%;
+    width: 75%;
 
     @media (max-width: 991.98px) {
       width: 85%;
@@ -62,10 +81,9 @@
 
   .hero_first_title {
     text-transform: uppercase;
-    font-size: 2.8rem;
+    font-size: 2.3rem;
     letter-spacing: 3px;
     font-weight: 300;
-    font-family: "Barlow Condensed", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
   }
@@ -76,17 +94,22 @@
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
-    width: 14rem;
-    height: 14rem;
+    width: 16rem;
+    height: 16rem;
     border-radius: 50%;
     cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
 
     .circle_text {
       color: #000000;
       font-size: 1.4rem;
+      font-family: "Bellefair", serif;
       font-weight: 400;
-      position: absolute;
       letter-spacing: 0.2rem;
+      text-align: center;
     }
   }
 
